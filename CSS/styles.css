@@ -17,12 +17,18 @@
   --second-bg-cl: #f5f4fa;
   --cl-box: #eeeeee;
   --bg-activ-btn: #188CE8;
+  --bg-grip-cl: #AFB1B8;
+  --bg-grip-activ-cl: #2196F3;
 
   /* Others */
   --items: 3;
   --indent: 30px;
 }
-
+/**
+  |============================
+  | Основні
+  |============================
+*/
 /* reset */
 h1,
 h2,
@@ -69,7 +75,11 @@ gap: var(--indent)
 flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
-/* body */
+/**
+  |============================
+  | body
+  |============================
+*/
 .page {
   font-size: 14px;
   font-family: var(--main-font);
@@ -95,7 +105,11 @@ flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
   align-items: center;
 }
 
-/*Header*/
+/**
+  |============================
+  | Header
+  |============================
+*/
 .header {
   background: var(--second-txt-cl);
   color: currentColor;
@@ -158,14 +172,28 @@ flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
   color: var(--accent-txt-cl);
 }
 
-/*Section 1 (шапка)*/
+/**
+  |============================
+  | Section 1 (шапка)
+  |============================
+*/
 
 .hero {
   background-color: var(--accent-bg-cl);
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url(../images/hero/bg-hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+/* затемнить!!!! */
 }
 
+/* .hero-container {
+} */
 
 
 .hero-title {
@@ -205,7 +233,11 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 }
 
-/*Section 2 (особливості)*/
+/**
+  |============================
+  | Section 2 (особливості)
+  |============================
+*/
 .feature {
   padding-bottom: 0;
 }
@@ -236,7 +268,11 @@ border-radius: 4px;
   color: var(--light-txt-cl);
 }
 
-/*чим ми займаємося*/
+/**
+  |============================
+  | чим ми займаємося
+  |============================
+*/
 
 /*.outer {
 }*/
@@ -257,7 +293,11 @@ border-radius: 4px;
 
 } */
 
-/*Команда*/
+/**
+  |============================
+  | Команда
+  |============================
+*/
 
 .team {
   background: var(--second-bg-cl);
@@ -305,7 +345,47 @@ border-radius: 4px;
   color: var(--light-txt-cl);
 }
 
-/*Footer */
+/**
+  |============================
+  | Client
+  |============================
+*/
+
+.client-title {
+  font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+margin-bottom: 50px;
+}
+
+.client-list {
+  display: flex;
+  gap: var(--indent);
+  --items: 6;
+}
+.client-item {
+border: 1px solid var(--bg-grip-cl);
+border-radius: 4px;
+width: 170px;
+height: 92px;
+}
+
+.client-item:hover,
+.client-item:focus {
+  color: var(--bg-grip-activ-cl);
+}
+
+/* Переделать карточки */
+
+/* .client-img {
+} */
+
+/**
+  |============================
+  | Footer
+  |============================
+*/
 
 .footer {
   background-color: var(--accent-bg-cl);
@@ -341,7 +421,12 @@ border-radius: 4px;
   color: var(--footer-link-txt-cl);
 }
 
-/*Partfolio*/
+  /**
+    |============================
+    | Partfolio
+    |============================
+  */
+
 .partfolio-filtr {
   display: flex;
   justify-content: center;
