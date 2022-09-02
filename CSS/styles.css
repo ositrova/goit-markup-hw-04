@@ -16,9 +16,9 @@
   --bg-cl: #f5f5f5;
   --second-bg-cl: #f5f4fa;
   --cl-box: #eeeeee;
-  --bg-activ-btn: #188CE8;
-  --bg-grip-cl: #AFB1B8;
-  --bg-grip-activ-cl: #2196F3; 
+  --bg-activ-btn: #188ce8;
+  --bg-grip-cl: #afb1b8;
+  --bg-grip-activ-cl: #2196f3;
 
   /* Others */
   --items: 3;
@@ -66,13 +66,13 @@ img {
 
 /* card set */
 .card-set {
-display: flex;
-flex-wrap: wrap;
-gap: var(--indent)
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
 }
 
 .card-set-item {
-flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 /**
@@ -113,7 +113,7 @@ flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 .header {
   background: var(--second-txt-cl);
   color: currentColor;
-  border-bottom: 1px solid #ececec;;
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
@@ -150,9 +150,11 @@ flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 .header-link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
+  gap: 10px;
 }
 
 .nav-contact {
@@ -172,6 +174,14 @@ flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
   color: var(--accent-txt-cl);
 }
 
+.contacts-icon {
+  fill: currentColor;
+  stroke: var(--light-txt-cl);
+}
+.nav-contact .contacts-icon:hover,
+.nav-contact .contacts-icon:focus {
+  color: var(--accent-txt-cl);
+}
 /**
   |============================
   | Section 1 (шапка)
@@ -182,7 +192,8 @@ flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
   background-color: var(--accent-bg-cl);
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/bg-hero.png);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/bg-hero.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -191,11 +202,8 @@ flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
   margin-right: auto;
 }
 
-
-
 /* .hero-container {
 } */
-
 
 .hero-title {
   font-weight: 900;
@@ -212,7 +220,7 @@ flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 .hero-btn:hover,
 .hero-btn:focus {
- background-color: var(--bg-activ-btn);
+  background-color: var(--bg-activ-btn);
 }
 .hero-btn {
   font-family: inherit;
@@ -230,8 +238,8 @@ flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
   margin-left: auto;
   margin-right: auto;
   border: none;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /**
@@ -246,6 +254,15 @@ border-radius: 4px;
 .feature-list {
   display: flex;
   gap: 30px;
+}
+.feature-icon-item {
+  padding: 25px 100px;
+  background-color: var(--second-bg-cl);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.feature-icon {
+  --items: 4;
 }
 
 /*.feature-headline {
@@ -305,7 +322,7 @@ border-radius: 4px;
 }
 
 .team-list {
-   --items: 4;
+  --items: 4;
 }
 
 .team-title {
@@ -365,7 +382,6 @@ border-radius: 4px;
   color: var(--bg-grip-cl);
   background-color: var(--second-txt-cl);
   border-radius: 50%;
- 
 }
 
 .socials-link:hover,
@@ -385,38 +401,37 @@ border-radius: 4px;
 
 .client-title {
   font-weight: 700;
-font-size: 36px;
-line-height: 42px;
-text-align: center;
-margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .client-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: var(--indent);
   --items: 6;
 }
 .client-item {
-border: 1px solid var(--bg-grip-cl);
-border-radius: 4px;
-width: 170px;
-height: 92px;
-padding: 16px 32px;
-color: var(--bg-grip-cl);
-  align-items: center;
-  justify-content: center;
-
+  border: 1px solid var(--bg-grip-cl);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  color: var(--bg-grip-cl);
+  
 }
 
-.client-item:hover,
-.client-item:focus {
+.client-link:hover,
+.client-link:focus {
   color: var(--accent-txt-cl);
 }
 
 .client-icon {
-fill: currentColor;
+  fill: currentColor;
 }
-
 
 /**
   |============================
@@ -429,6 +444,10 @@ fill: currentColor;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-flex {
+  display: flex;
+  gap: 70px;
+}
 
 .footer-logo {
   display: block;
@@ -438,7 +457,7 @@ fill: currentColor;
   color: var(--second-txt-cl);
 }
 
-.footer-list{
+.footer-list {
   display: flex;
   flex-direction: column;
   gap: 9px;
@@ -457,8 +476,51 @@ fill: currentColor;
 .footer-item {
   color: var(--footer-link-txt-cl);
 }
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
 
-  /**
+.footer-socials-container {
+}
+.footer-socials-text {
+  font-weight: 700;
+  line-height: calc(16 / 4);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-txt-cl);
+  margin-bottom: 20px;
+}
+.footer-socials-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-socials-item {
+}
+.footer-socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: var(--second-txt-cl);
+  background-color: var(--footer-link-txt-cl);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--bg-grip-activ-cl);
+}
+.footer-socials-icon {
+  fill: currentColor;
+}
+
+/**
     |============================
     | Partfolio
     |============================
@@ -493,6 +555,7 @@ fill: currentColor;
 .partfolio-btn:focus {
   color: var(--second-txt-cl);
   background: var(--accent-txt-cl);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* .partfolio-card-list {
@@ -520,4 +583,9 @@ fill: currentColor;
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--light-txt-cl);
+}
+
+.partfolio-work:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
