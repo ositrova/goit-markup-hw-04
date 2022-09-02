@@ -411,7 +411,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--indent);
+  gap: 30px;
   --items: 6;
 }
 .client-item {
@@ -421,7 +421,6 @@ img {
   height: 92px;
   padding: 16px 32px;
   color: var(--bg-grip-cl);
-  
 }
 
 .client-link:hover,
