@@ -488,8 +488,8 @@ img {
   flex-direction: column;
 }
 
-.footer-socials-container {
-}
+/* .footer-socials-container {
+} */
 .footer-socials-text {
   font-weight: 700;
   line-height: calc(16 / 4);
@@ -503,8 +503,8 @@ img {
   gap: 10px;
 }
 
-.footer-socials-item {
-}
+/* .footer-socials-item {
+} */
 .footer-socials-link {
   display: flex;
   align-items: center;
