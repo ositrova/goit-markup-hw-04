@@ -426,14 +426,18 @@ img {
   --items: 6;
 }
 .client-item {
+   display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--bg-grip-cl);
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
+  
   color: var(--bg-grip-cl);
   cursor: pointer;
 }
+
 
 .client-item:hover,
 .client-item:focus {
