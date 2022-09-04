@@ -382,7 +382,7 @@ img {
   justify-content: center;
   gap: 10px;
 }
-
+.socials-item
 .socials-link {
   display: flex;
   align-items: center;
@@ -433,7 +433,6 @@ img {
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  
   color: var(--bg-grip-cl);
   cursor: pointer;
 }
@@ -508,10 +507,11 @@ img {
 } */
 .footer-socials-text {
   font-weight: 700;
-  line-height: calc(16 / 4);
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-txt-cl);
+  margin-bottom: 20px;
 }
 .footer-socials-list {
   display: flex;
