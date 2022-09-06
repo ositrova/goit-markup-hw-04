@@ -423,9 +423,10 @@ img {
   gap: 30px;
   --items: 6;
 }
-/* .client-item {
-   
-} */
+.client-item {
+   width: 170px;
+  height: 92px;
+}
 
 .client-link {
   display: flex;
@@ -433,8 +434,8 @@ img {
   align-items: center;
   border: 1px solid var(--bg-grip-cl);
   border-radius: 4px;
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   color: var(--bg-grip-cl);
 }
 
